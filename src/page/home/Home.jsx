@@ -7,22 +7,25 @@ import React from 'react'
 
 const Home = () => {
   return (
-    // <div className='homepage'>
-    //    <div className="posts">
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
-    //         <Post/>
+   <>
+     <div className='homepage'>
+       <div className="posts">
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
             
-    //    </div>
-    //     <Sidebar/>
-    // </div>
-    <PostPage/>
+       </div>
+        <Sidebar/>
+    </div>
+    {/* <PostPage/> */}
+    
+   </>
   )
 }
 

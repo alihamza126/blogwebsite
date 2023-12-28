@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 
 const Navbar = () => {
+  let [open,setopen]=useState(false)
+  const isOpen=()=>{
+        open=setopen(!open);
+        console.log(open)
+  }
   return (
     <div className="navbar">
       <div className="left">
@@ -11,7 +16,8 @@ const Navbar = () => {
           <a href="https://github.com/alihamza126" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-      <div className="center">
+      <div className="center" style={{left:open?'-150px':'0'}}>
+        <button onClick={isOpen} >X</button>
         <ul>
           <li>Home</li>
           <li>Contact us</li>
