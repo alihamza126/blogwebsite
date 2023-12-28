@@ -1,0 +1,99 @@
+.navbar{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            position: sticky;
+            top: 0;
+            z-index: 11;
+            background-color: rgb(248, 248, 248);
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 5px 5px rgba(144, 150, 151, 0.315);
+            
+    .left{
+            flex: 2;
+            display: flex;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            .social-links{
+                display: flex;
+                gap: 1rem;
+                i{
+                    &:hover{
+                        color: orange;
+                        transition: all .4s ease;
+                        cursor: pointer;
+                    }
+                }
+            }
+    }
+    .center{
+            flex: 5;
+            display: flex;
+            justify-content: center;
+        ul{
+            display: flex;
+            padding: 1rem;
+            li{
+                list-style: none;
+                font-weight: 700;
+                font-size: 18px;
+                padding: 10px;
+                &:hover{
+                    color: orange;
+                    transition: all .4s ease;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+    .right{
+        flex: 2;
+            .account{
+                    display: flex;
+                    padding: 1rem;
+                    gap: 10px;
+                    align-items: center;
+                    i{
+                        padding-left: 1rem;
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+
+                    .search-box{
+                        display: flex;
+                        align-items: center;
+                        width: 150px;
+                        padding: 10px;
+                        height: 30px;
+                        background-color: rgb(144, 150, 151);
+                        border-radius: 20px;
+                        
+                        i{
+                            font-size: 18px;
+                            color: aliceblue;
+                            &:hover{
+                                color: orange;
+                                transition: all .4s ease;
+                                cursor: pointer;
+                            }
+                        }
+                        input[type=text]{
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            width: 100%;
+                            color: aliceblue;
+                            font-size: 16px;
+                            padding-left: 5px;
+                        }
+                    }
+            }
+    }
+}

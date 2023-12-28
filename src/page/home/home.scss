@@ -1,0 +1,13 @@
+.homepage{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    gap: 5px;
+    .posts{
+        flex: 9;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        gap: 1rem;
+    }
+}
