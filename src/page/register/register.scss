@@ -1,0 +1,103 @@
+.register {
+   width: 100%;
+   height: calc(100vh - 84px + 1rem);
+   background: url(https://e0.pxfuel.com/wallpapers/386/919/desktop-wallpaper-website-background-website-login-page-background.jpg);
+   display: flex;
+   background-repeat: no-repeat;
+   background-size: cover;
+   align-items: center;
+   justify-content: center;
+   margin-top: -1rem;
+   position: relative;
+
+   .top-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+
+      button {
+         outline: none;
+         outline: none;
+         padding: 0.7rem 2rem;
+         background-color: rgb(184, 132, 36);
+         outline: none;
+         border: none;
+         color: rgba(245, 245, 245, 0.815);
+         border-radius: 5px;
+         font-size: 14px;
+         font-weight: 500;
+         box-shadow: 0px 0px 2px rgba(87, 86, 86, 0.226);
+         &:hover {
+            filter: brightness(1.1);
+            transition: all 0.1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+            cursor: pointer;
+         }
+      }
+   }
+   .box {
+      width: 300px;
+      height: max-content;
+      padding: 3rem 1rem;
+      background: floralwhite;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+         color: slateblue;
+
+         h1 {
+         }
+      }
+
+      form {
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         margin-top: 2rem;
+         width: 100%;
+         padding: 10px 2rem;
+         .input {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 100%;
+            label {
+               color: slategray;
+               font-size: 17px;
+               padding-bottom: 4px;
+            }
+            input {
+               width: 100%;
+               outline: none;
+               border: none;
+               border-bottom: 2px solid slategrey;
+               padding: 2px;
+               background-color: transparent;
+               font-size: 16px;
+            }
+            p {
+               color: red;
+               font-size: 12px;
+            }
+         }
+         button {
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            background: rgb(48, 153, 48);
+            color: beige;
+            font-weight: 700;
+            box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.01);
+            border-radius: 3px;
+            margin-top: 10px;
+
+            &:hover {
+               filter: brightness(1.1);
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
